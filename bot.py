@@ -44,7 +44,7 @@ class Bot(commands.Bot):
 
     def run(self):
         self.load_commands()
-        self.loop.create_task(self.app.run_task(port=1337, host="ip"))
+        self.loop.create_task(self.app.run_task(port=57467, host="192.168.0.178"))
         self.loop.create_task(self.start(oauth2.discord_token))
         self.loop.run_forever()
 
